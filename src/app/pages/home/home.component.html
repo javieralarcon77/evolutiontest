@@ -1,0 +1,26 @@
+<div class="row justify-content-center">
+    <div class="col-sm-9">
+        <div class="list-group">
+            <li class="list-group-item list-group-item-action" *ngFor="let task of tasks">
+              <div class="d-flex w-100 justify-content-between">
+                <div>
+                    <h5 class="mb-1">{{ task.name }}</h5>
+                    <small>{{ task.expiration }}</small>
+                </div>
+                <div>
+                    <button class="btn btn-sm btn-outline-success" (click)="editTask(task)">
+                        <span class="material-icons">create</span>
+                    </button>
+                    <button class="btn btn-sm btn-outline-danger" (click)="deleteTask(task)">
+                        <span class="material-icons">delete</span>
+                    </button>
+                </div>
+              </div>
+            </li>
+        </div>
+    </div>
+</div>
+
+<button type="button" class="float btn btn-primary" (click)="addTask()">
+    <span class="material-icons">add</span>
+</button>

@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "evolutiontest"
+    }
+  },
+  "defaultProject": "evolutiontest",
+  "cli": {
+    "analytics": false
+  }
 }
